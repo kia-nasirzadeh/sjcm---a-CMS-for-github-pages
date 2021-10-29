@@ -1,0 +1,33 @@
+{
+  "name": "s.j.c.m",
+  "version": "1.0.0",
+  "description": "###  Simple Json Contents Manager",
+  "productName": "S.J.C.M",
+  "main": "index.js",
+  "dependencies": {
+    "chokidar": "^3.3.1",
+    "electron": "^7.0.0",
+    "electron-prompt": "^1.4.0",
+    "lodash": "^4.17.15",
+    "rimraf": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1"
+  },
+  "scripts": {
+    "build": "npm run package-win",
+    "package-win": "electron-packager . soso --platform=win32 --arch=x64 --icon=assets/Icon.ico"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/ashkan-nasirzadeh/sjcm.git"
+  },
+  "author": "ashkan nasirzadeh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/ashkan-nasirzadeh/sjcm/issues"
+  },
+  "homepage": "https://gitlab.com/ashkan-nasirzadeh/sjcm#readme"
+}

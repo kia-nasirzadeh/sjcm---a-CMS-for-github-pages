@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css.css">
+    <title>SJCM(SimpleJsonContentManager)</title>
+</head>
+
+<body>
+    <!-- <div class="editor-c" data-id="1">
+        <div class="editor">
+            <div class="topbar">
+                <div>
+                    <div class="editorLink" id="editor-link">
+                        <div class="editorLogo"></div><div class="editorShortcut">ctrl+L</div>
+                    </div>
+                    <div class="editorLink" id="editor-bold">
+                        <div class="editorLogo"></div><div class="editorShortcut">ctrl+B</div>
+                    </div>
+                    <div class="editorLink" id="editor-underline">
+                        <div class="editorLogo"></div><div class="editorShortcut">ctrl+U</div>
+                    </div>
+                    <div class="editorLink" id="editor-italic">
+                        <div class="editorLogo"></div><div class="editorShortcut">ctrl+I</div>
+                    </div>
+                    <div class="editorLink" id="editor-direction">
+                        <div class="editorLogo"></div><div class="editorShortcut">ctrl+D</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="editorLink" id="editor-close-hard">
+                        <div class="editorLogo"></div><div class="editorShortcut"></div>
+                    </div>
+                    <div class="editorLink" id="editor-close-soft">
+                        <div class="editorLogo"></div><div class="editorShortcut">ctrl+C</div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="editorbar" contenteditable="true"></div>
+        </div>
+    </div> -->
+
+
+    <div class="main-c-left">
+        <div class="top-bar">
+            <!-- <input type="button" value='give Folder' id='btn' onclick="makePageFromFolder()"> -->
+            <!-- <input type="button" value='folderToSaveJson' id='btn' onclick="getGlobaldata('folderToSaveJson')"> -->
+            <!-- <input type="button" value='folderTogetContents' id='btn' onclick="getGlobaldata('folderTogetContents')"> -->
+            <!-- <input type="button" value='jsonDbName' id='btn' onclick="getGlobaldata('jsonDbName')"> -->
+            <!-- <input type="button" value='refresh' id='btn' onclick="refresh()"> -->
+            <div>
+                <div class="monitor" id="manifest-monitor-btn" onclick=""></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items: center;flex-direction: row;" class="btnsPack">
+                <!-- <div class="btn btn-large" id="" onclick="copyJson()"><span>copy json</span></div> -->
+                <div class="btn btn-large" onclick="openjson()" title="open json file"><img src="assets/openjson.png"></div>
+                <div class="btn btn-large" onclick="changeRightPage('#settings', true)" title="more"><img src="assets/more.png"></div>
+                <div class="btn btn-large" onclick="undo(true)" title="undo"><img src="assets/undo.png"></div>
+                <div class="btn btn-large" onclick="redo(true)" title="redo"><img src="assets/redo.png"></div>
+                <div class="btn btn-large" onclick="reSort(true)" title="ReSort"><img src="assets/resort.png"></div>
+                <div class="btn btn-large" onclick="changeRightPage('#about', true)" title="about"><img src="assets/about.png"></div>
+                <div class="btn btn-large" id="shell-btn" onclick="changeRightPage('#shell', true),focusTo()" title="shell"><img src="assets/shell.png"></div>
+            </div>
+        </div>
+        <div class="items-c">
+            <!-- <div class="item-c">
+        <div class="item-op-1"></div>
+        <div class="item-op-2"></div>
+        <div class="item-op-3"></div>
+        <div class="item-op-4"></div>
+        <div class="item-op-5">
+            <label class="label1">
+                <input type="checkbox" id='item1'>
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="item-op-6"></div>
+      </div> -->
+        </div>
+    </div>
+    <div class="main-c-right">
+        <div class="defaultBg">
+        </div>
+        <div class="shell-c" id="shell">
+            <div id="shell-c"></div>
+        </div>
+        <div class="about-c" id="about">
+            <img src="assets/sjcm.png" alt="S.J.C.M LOGO">
+            <a href="https://www.ashkan-nasirzadeh.ir/homepage">S.J.C.M official support</a>
+            <a href="#">github</a>
+            <a href="https://www.ashkan-nasirzadeh.ir/homepage">author website</a>
+        </div>
+        <div class="menu-c" id="menu">
+            <div class="menuItems-c">
+                <div class="menuItem-c">
+                    <div class="menu-item btn btn-color" onclick="color('darkred')" style="background: darkred"></div>
+                    <div class="menu-item btn btn-color" onclick="color('orangered')" style="background: orangered"></div>
+                    <div class="menu-item btn btn-color" onclick="color('tomato')" style="background: tomato"></div>
+                    <div class="menu-item btn btn-color" onclick="color('darkgoldenrod')" style="background: darkgoldenrod"></div>
+                    <div class="menu-item btn btn-color" onclick="color('darkorange')" style="background: darkorange"></div>
+                    <div class="menu-item btn btn-color" onclick="color('orange')" style="background: orange"></div>
+                    <div class="menu-item btn btn-color" onclick="color('darksalmon')" style="background: darksalmon"></div>
+                    <div class="menu-item btn btn-color" onclick="color('sienna')" style="background: sienna"></div>
+                    <div class="menu-item btn btn-color" onclick="color('darkgrey')" style="background: darkgrey"></div>
+                    <div class="menu-item btn btn-color" onclick="color('darkmagenta')" style="background: darkmagenta"></div>
+                    <div class="menu-item btn btn-color" onclick="color('darkorchid')" style="background: darkorchid"></div>
+                    <div class="menu-item btn btn-color" onclick="color('darkseagreen')" style="background: darkseagreen"></div>
+                    <div class="menu-item btn btn-color" onclick="color('darkblue')" style="background: darkblue"></div>
+                    <div class="menu-item btn btn-color" onclick="color('royalblue')" style="background: royalblue"></div>
+                    <div class="menu-item btn btn-color" onclick="color('darkcyan')" style="background: darkcyan"></div>
+                    <div class="menu-item btn btn-color" onclick="color('darkturquoise')" style="background: darkturquoise"></div>
+                    <div class="menu-item btn btn-color" onclick="color('darkgreen')" style="background: darkgreen"></div>
+                    <div class="menu-item btn btn-color" onclick="color('greenyellow')" style="background: greenyellow"></div>
+                    <div class="menu-item btn btn-color" onclick="color('lime')" style="background: lime"></div>
+                    <div class="menu-item btn btn-color" onclick="color('black')" style="background: black"></div>
+                    <div class="menu-item btn btn-large" id="menuDelete">delete selected</div>
+                    <div class="menu-item btn btn-medium" id="menuCopyAfter">CopyAfter selected</div>
+                    <div class="menu-item btn btn-medium" id="menuCopy">Copy selected</div>
+                </div>
+            </div>
+        </div>
+        <div class="settings-c" id="settings">
+            <div class="setting-tab">
+                <div class="tabHeading">► Configurarion item ------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
+                <div class="tabContents">
+                    <div class="announce">you <div class="haveConf inAnnounce" data-func="sayConfExists()"></div> a configuration item for this json</div>
+                    <div class="makeConf btn2" data-func="SyncConfBtn()" onclick="makeAconf()">make a configurarion file</div><br>
+                    <div class="makeConf btn2" onclick="toggleConfHide()">hide/show configurarion item</div><br>
+                    <div class="makeConf btn2" data-func="SyncPermaBtn()" onclick="makePermaLink(true)">add permalink</div><br>
+                </div>
+            </div>
+            <div class="setting-tab">
+                <div class="tabHeading">► Corresponding post ------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
+                <div class="tabContents">
+                    <div class="announce">you <div class="haveConf inAnnounce" data-func="sayPostExists()"></div> a corresponding post for this json</div>
+                    <div class="makeConf btn2" data-func="SyncPostFolderPathBtn()" onclick="choosePostPath()">choose _posts folder</div><br>
+                    <div class="makeConf btn2" data-func="SyncCreatePostBtn()" onclick="createPost()">create post</div><br>
+                    <div class="makeConf btn2" data-func="SyncOpenPostBtn()" onclick="openPost()">open post</div><br>
+                    <div class="makeConf btn2" data-func="SyncOpenPostBtn()" onclick="openPostFolder()">open post containing folder</div><br>
+                    <div class="makeConf btn2" data-func="SyncDeletePostBtn()" onclick="DeletePost()">delete post</div><br>
+                </div>
+            </div>
+            <div class="setting-tab">
+                <div class="tabHeading">► jekyll server ------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
+                <div class="tabContents">
+                    <div class="announce" id="serverStatus">port 4000 <div class="haveConf inAnnounce" data-func="serverCheck()"></div> open
+                    <div id="checkBTN" class="makeConf btn2" onclick="serverCheck()">ReCheck</div></div>
+                    <div id="startBTN"class="makeConf btn2" onclick="serverStart()">start</div><br>
+                    <div id="stopBTN"class="makeConf btn2" onclick="serverStop()">stop</div><br>
+                </div>
+            </div>
+            <div class="setting-tab">
+                <div class="tabHeading">► make search index ------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
+                <div class="tabContents">
+                    <br><div class="btn2" onclick="choose_dataFolder()" data-func="syncDataFolderChoose()" style="margin-bottom: 5px;">choose_dataFolder</div>
+                    <br><div class="btn2" onclick="makeSearchTreasure()" data-func="syncMakeSearch()" style="margin-bottom: 5px;">make search treasure</div>
+                </div>
+            </div>
+                <!-- <div class="tabHeading">► Export ------------------------------------------------------------------------------------------------------------------------------------------------------------</div> -->
+                <!-- <div class="tabHeading">► Search ------------------------------------------------------------------------------------------------------------------------------------------------------------</div> -->
+                <!-- <div class="tabHeading">► backUP ------------------------------------------------------------------------------------------------------------------------------------------------------------</div> -->
+        </div>
+    </div>
+
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="caret.js" type="text/javascript"></script>
+    <script src="shell.js"></script>
+    <script src="electron1.js"></script>
+    <script src="editor.js"></script>
+    <script>
+        if (window.module) module = window.module;
+    </script>
+    <script type="text/javascript">
+        $('#shell').click(() => {
+            $('.prompt-command-class').focus();
+        });
+    </script>
+
+</body>
+
+</html>

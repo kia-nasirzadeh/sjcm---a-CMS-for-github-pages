@@ -1,0 +1,53 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+rimraf	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^var rimraf = require("rimraf");$/;"	variable	line:8
+fileWatcher	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^var fileWatcher = require("chokidar");$/;"	variable	line:10
+_	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^var _ = require('lodash');$/;"	variable	line:14
+shellObj.shell-container	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^    'shell-container': '#shell-c',$/;"	property	line:17
+shellObj.background-color	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^    'background-color': 'black',$/;"	property	line:18
+shellObj.prompt-sign	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^    'prompt-sign': '►',$/;"	property	line:19
+shellObj.prompt-sign-color	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^    'prompt-sign-color': 'lime',$/;"	property	line:20
+shellObj.prompt-answer-color	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^    'prompt-answer-color': 'yellow',$/;"	property	line:21
+shellObj.commands	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^    'commands': {$/;"	property	line:22
+autoCommand.a	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^    a:null,$/;"	property	line:54
+autoCommand.i	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^    i:0,$/;"	property	line:55
+autoCommand.j	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^    j:0,$/;"	property	line:56
+autoCommand.cmd	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^    cmd: '',$/;"	property	line:57
+autoCommand.noCrash	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^    noCrash: 'free',$/;"	property	line:58
+autoCommand.Queue	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^    Queue: [],$/;"	property	line:59
+add	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^    add: function (cmd, answer = false) {$/;"	function	line:62
+type	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^    type: function (cmd) {$/;"	function	line:70
+pressEnter	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^    pressEnter: function () {$/;"	function	line:84
+typeCmd	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^    typeCmd: function (cmd) {$/;"	function	line:93
+run	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^    run: function () {$/;"	function	line:99
+finalizingCommand	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^    finalizingCommand: function () {$/;"	function	line:111
+commandHelp	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function commandHelp() {$/;"	function	line:117
+commandHelp	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function commandHelp() {$/;"	function	line:117
+commandCls	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function commandCls() {$/;"	function	line:122
+commandCls	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function commandCls() {$/;"	function	line:122
+makeAShell	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function makeAShell(container) {$/;"	function	line:126
+makeAShell	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function makeAShell(container) {$/;"	function	line:126
+makeAPrompt	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function makeAPrompt (container, prompt = '', parentCommand = '') {$/;"	function	line:130
+makeAPrompt	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function makeAPrompt (container, prompt = '', parentCommand = '') {$/;"	function	line:130
+posAtEnd	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function posAtEnd (el) {$/;"	function	line:198
+posAtEnd	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function posAtEnd (el) {$/;"	function	line:198
+makeAnAnswer	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function makeAnAnswer(command, container, parentCommand = false) {$/;"	function	line:205
+makeAnAnswer	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function makeAnAnswer(command, container, parentCommand = false) {$/;"	function	line:205
+showAnswer	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function showAnswer(answer, container) {$/;"	function	line:260
+showAnswer	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function showAnswer(answer, container) {$/;"	function	line:260
+aliasDelete	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function aliasDelete (backedArr) {$/;"	function	line:281
+aliasDelete	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function aliasDelete (backedArr) {$/;"	function	line:281
+aliasHard	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function aliasHard (backedArr) {$/;"	function	line:299
+aliasHard	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function aliasHard (backedArr) {$/;"	function	line:299
+aliasSoft	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function aliasSoft (backedArr) {$/;"	function	line:316
+aliasSoft	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function aliasSoft (backedArr) {$/;"	function	line:316
+ctrlc	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function ctrlc () {$/;"	function	line:326
+onkeyup	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^    document.onkeyup = function(e) {$/;"	function	line:327
+document.onkeyup	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^    document.onkeyup = function(e) {$/;"	function	line:327
+ctrlc	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function ctrlc () {$/;"	function	line:326
+syncAlias	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function syncAlias (jsonForSync = false) {$/;"	function	line:335
+syncAlias	C:\Users\ashkan nasirzadeh\Desktop\pageBuilder\shell.js	/^function syncAlias (jsonForSync = false) {$/;"	function	line:335
